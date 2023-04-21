@@ -51,19 +51,6 @@ margin:0;
     color: bisque;
     font-size: 20px;  
     font-family: 'Rajdhani', sans-serif;
-    
-    /* position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    list-style: none;
-    padding-top: 4rem; */
 }
 
 @media (max-width: 800px) {
@@ -84,9 +71,10 @@ margin:0;
 .hamburger-icon, .logo {
     display: block;
     color: white;
-    background-color:rgba(0, 0, 0, 0.0);
+    background-color:rgba(0, 0, 0, 0.7);
     margin-left: 10px;
     font-size: 35px;
+   
 }
 
 @media (max-width:800px) {
@@ -108,32 +96,32 @@ margin:0;
     background-color: rgba(0, 0, 0, 0.7);
     align-items: center;
     height: 500px;
-    /* position: relative */
+    
     
 }
 
-#socials a {
+/* #socials a { */
 
     /* margin-right: 580px; */
-    background-color: white;
+    /* background-color: white;
     padding: 20px 15px;
     transform: translateX(150%);
-    width: 200px;
+    width: 100px;
     transition: transform 1.0s;
     text-align: center;
-    margin-right: 450px;
+    margin-right: 450px; */
     /* display: none; */
-    padding: 0;
+    /* padding: 0; */
    
     
-}
+/* }
 #socials-off img{
 transform: translateX(-550%);
 margin-right: 550px;
 overflow: hidden;
 
 
-}
+} */
 
 
 .main-hero-content {
@@ -141,9 +129,8 @@ overflow: hidden;
     color: bisque;
     flex-direction: column;
     text-align: center;
-    margin-right: 750px;
+    margin-right: 550px;
     text-align: justify;
-    width: 500px;
     margin-bottom: 50px;
     
     
@@ -153,6 +140,18 @@ overflow: hidden;
     text-align: center;
     font-size: 50px;
     font-family: 'Rajdhani', sans-serif;
+    margin-left: 250px;
+    display: inline-block;
+    width: 100%;
+}
+span {
+    opacity: 0;
+    transition: all 0.4s ease;
+    
+}
+
+span.fade {
+    opacity: 1;
     
 }
 
@@ -167,6 +166,8 @@ overflow: hidden;
     text-align: center;
     font-size: 20px;
     font-family: 'Rajdhani', sans-serif;
+    margin-left: 550px;
+    
 }
 
 @media (max-width: 800px) {
@@ -181,6 +182,7 @@ overflow: hidden;
    display: flex;
    justify-content: center;
    text-align: center;
+   margin-left: 550px;
 }
 
 .projects-btn {
