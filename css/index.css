@@ -1,0 +1,461 @@
+
+body {
+background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+animation: gradient 15s ease infinite;
+height: 100%;
+background-size: 400% 400%;
+margin:0;
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    /* transform: translateX(400px);
+    transition: 0.5s; */
+    
+}
+
+
+@media (max-width: 800px) {
+    .site-header {
+        display: block;
+        text-align: center;
+    }
+}
+.main-nav-item:hover {
+   cursor: pointer;
+   color: rgba(135, 63, 194, 0.808);
+   background:#facf0f ;
+   border-radius: 10px;
+   padding: 10px 10px;
+}
+
+
+.main-nav a {
+    display: inline-block;
+    margin: 20px;
+    color: bisque;
+    font-size: 20px;  
+    font-family: 'Rajdhani', sans-serif;
+    
+    /* position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem; */
+}
+
+@media (max-width: 800px) {
+    .main-nav a {
+        display: none;
+        margin-left: 550px;
+        
+    }
+}
+
+
+.hamburger-icon, .main-nav {
+    text-decoration: none;
+    display: block;
+    font-size: 50px;
+}
+
+.hamburger-icon, .logo {
+    display: block;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.0);
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+@media (max-width:800px) {
+    #icon, .hamburger-icon {
+         display: flex;
+         justify-content: flex-start;
+         font-size: 30px;
+         display: none;       
+ }
+}
+
+/* header ends */
+
+/* hero section begins */
+
+.main-section-hero {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    height: 500px;
+    /* position: relative */
+    
+}
+
+#socials a {
+
+    /* margin-right: 580px; */
+    background-color: white;
+    padding: 20px 15px;
+    transform: translateX(150%);
+    width: 200px;
+    transition: transform 1.0s;
+    text-align: center;
+    margin-right: 450px;
+    /* display: none; */
+    padding: 0;
+   
+    
+}
+#socials-off img{
+transform: translateX(-550%);
+margin-right: 550px;
+overflow: hidden;
+
+
+}
+
+
+.main-hero-content {
+    display: flex;
+    color: bisque;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 750px;
+    text-align: justify;
+    width: 500px;
+    margin-bottom: 50px;
+    
+    
+}
+
+.main-intro  {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+@media (max-width: 800px) {
+    .main-intro {
+        font-family: 'Rajdhani', sans-serif;
+    }
+}
+
+
+.hero-info p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+@media (max-width: 800px) {
+    .hero-info p {
+        display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 20px;
+    }
+}
+
+  .main-hero-button {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.projects-btn {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 40px;
+    background-color: #facf0f;
+    width: 300px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    
+    
+}
+/* hero section ends */
+
+/* main section */
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(228, 224, 224, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.heading-main {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.heading-sub {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+.main-container {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;  
+}
+
+.about-me-content h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 50px;
+    width: auto;
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-between;
+    font-family: 'Rajdhani', sans-serif;
+  
+}
+
+.about-me-content{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 160px;
+}
+
+@media (max-width:800px) {
+    .about-me {
+        display: grid;
+        grid-template-rows: 1fr ;
+    }
+    .about-me-content {
+        display: block;
+        margin-left: 200px;
+        margin-right: 100px;
+        font-family: 'Rajdhani', sans-serif;
+        
+    }
+     .about-me-details {
+        margin-left: 50px;
+        text-align: center;
+        width: 100%;
+        padding-right: 85px;
+        display: flex;
+        justify-content: center;
+     }
+     .skill-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       
+     }
+     .get-to-know-me {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-right: 100px;
+        margin-left: 190px;
+        
+     }
+      .my-skills  {
+        margin-left: 100px;
+        width: 100%;
+        padding-left: 70px;
+      }
+    }
+.my-skills {
+    margin-right: 200px;
+    
+
+}
+
+.skill-container {
+    background-color: rgba(228, 224, 224, 0.0);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.get-to-know-me {
+    display: flex;
+    justify-content: flex-start;
+    text-align:initial;
+    width: 50%;
+    padding-left: 40px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.skill-set {
+    display: flex;
+    padding-right: 20px;
+    padding-left: 5px;
+    margin-right: 10px;
+    background-color:rgba(228, 224, 224, 0.4);
+    font-size: 20px;
+    height: 50px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    width: 10%;
+    border: 2px solid black;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* main section ends */
+
+  /* project section begins */
+
+    .project-container {
+    margin-bottom: 20px;
+    padding: 50px;
+    display: block;
+    overflow: hidden;
+    width: 500px;
+    text-align: center;
+    margin-left: 550px;
+    
+}
+
+@media (max-width:800px) {
+     .project-container {
+        display: none;
+        justify-content: center;
+        margin-right: 500px;
+        overflow: hidden;
+        /* grid-template-columns: 1fr; */
+        /* justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%; */
+       
+    }
+    .project-row-content {
+     font-size: 20px;  
+     width: auto;
+    
+        
+    }
+    .project-2-row-grid {
+        
+        text-align: center;
+        width: 100%;
+    }
+    .project-sub{
+        text-align: center;
+        font-size: 1px;
+        
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        margin-left: 100px;
+       
+    }
+}
+
+
+    .project-heading {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    color: rgb(245, 228, 228);
+    
+}
+
+    .project-sub {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    color: rgb(245, 228, 228);
+    
+}
+
+
+ .project-section {
+    background-color: rgba(228, 224, 224, 0.4);
+    /* background-color: rgb(168, 177, 172 ); */
+    
+ }
+
+ .project-2-row-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    /* justify-content: end; */
+    justify-items: center;
+    align-items: center;
+    
+   
+    
+  
+ }
+
+ .project-img {
+    display: flex;
+    height: 350px;
+    width: 550px;
+    border: 5px solid grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+ }
+
+ .project-ga {
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    text-align: center;
+   
+ }
+
+ .project-discription {
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+ }
+
+ /* project section ends */
+
+ .footer-container {
+    background-color: black;
+    color: white;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+ }
+
+ .footer-links {
+    font-family: 'Rajdhani', sans-serif;
+   
+ }
