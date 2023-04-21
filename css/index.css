@@ -19,6 +19,10 @@ margin:0;
 	}
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -42,6 +46,7 @@ margin:0;
    background:#facf0f ;
    border-radius: 10px;
    padding: 10px 10px;
+   
 }
 
 
@@ -51,6 +56,7 @@ margin:0;
     color: bisque;
     font-size: 20px;  
     font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -144,20 +150,30 @@ overflow: hidden;
     display: inline-block;
     width: 100%;
 }
+
+/* javascript css */
 span {
     opacity: 0;
     transition: all 0.4s ease;
+    transform: translateY(50px);
+    color: #facf0f;
+    
+    
     
 }
 
 span.fade {
     opacity: 1;
+    transform: translateY(0px);
+    
     
 }
+/* javascript css end */
 
 @media (max-width: 800px) {
     .main-intro {
         font-family: 'Rajdhani', sans-serif;
+
     }
 }
 
@@ -172,17 +188,32 @@ span.fade {
 
 @media (max-width: 800px) {
     .hero-info p {
-        display: flex;
+        display: inline-block;
+        text-align: justify;
         font-family: 'Rajdhani', sans-serif;
         font-size: 20px;
+        margin-left: 500px;  
+        display: flex;
+        width: 200px;
+        margin: 0;  
+        margin-left: 550px;
+    }
+
+    .main-hero-content {
+      display: flex;
+      align-items: center;
+    }
+    .main-hero-button {
+        margin-top: 20px;
     }
 }
 
-  .main-hero-button {
+  .main-hero-button  {
    display: flex;
    justify-content: center;
    text-align: center;
    margin-left: 550px;
+   text-decoration: none;
 }
 
 .projects-btn {
@@ -256,8 +287,8 @@ span.fade {
     }
     .about-me-content {
         display: block;
-        margin-left: 200px;
-        margin-right: 100px;
+        margin-left: 150px;
+        margin-right: 50px;
         font-family: 'Rajdhani', sans-serif;
         
     }
@@ -281,7 +312,7 @@ span.fade {
         display: flex;
         justify-content: center;
         padding-right: 100px;
-        margin-left: 190px;
+        margin-left: 140px;
         
      }
       .my-skills  {
@@ -350,6 +381,7 @@ span.fade {
         justify-content: center;
         margin-right: 500px;
         overflow: hidden;
+        
         /* grid-template-columns: 1fr; */
         /* justify-content: center;
         align-items: center;
@@ -364,7 +396,6 @@ span.fade {
         
     }
     .project-2-row-grid {
-        
         text-align: center;
         width: 100%;
     }
@@ -377,6 +408,9 @@ span.fade {
         justify-content: center;
         margin-left: 100px;
        
+    }
+    .project-content {
+        padding-top: 20px;
     }
 }
 
